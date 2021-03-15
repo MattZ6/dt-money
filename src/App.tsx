@@ -1,3 +1,10 @@
+import { GlobalStyle } from "./styles/GlobalStyle";
+
 export function App() {
-  return <h1>👋🏻</h1>;
+  return (
+    <>
+      <GlobalStyle />
+      <h1>👋🏻</h1>
+    </>
+  );
 }
