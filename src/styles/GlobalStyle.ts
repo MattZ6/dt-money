@@ -11,6 +11,11 @@ export const GlobalStyle =  createGlobalStyle`
     --text-body: #969cb3;
 
     --shape: #ffffff;
+    
+    @media (prefers-color-scheme: dark) {
+      --background-color: #0d1117;
+      --blue: #11141e;
+    }
   }
 
   * {
@@ -27,7 +32,7 @@ export const GlobalStyle =  createGlobalStyle`
       font-size: 93.75%; // 15px
     }
 
-    @media (max-width: 1080px) {
+    @media (max-width: 700px) {
       font-size: 87.5%; // 14px
     }
   }
