@@ -20,7 +20,9 @@ export const GlobalStyle =  createGlobalStyle`
       --blue: #11141e;
 
       --shape: #191e2e;
+      
       --text-title: #52629a;
+      --text-body: #3f455c;
     }
   }
 
