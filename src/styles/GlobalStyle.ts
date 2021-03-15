@@ -4,6 +4,7 @@ export const GlobalStyle =  createGlobalStyle`
   :root {
     --background-color: #f0f2f5;
     --red: #e52e4d;
+    --green: #33cc95;
     --blue: #5429cc;
     --blue-light: #6933ff;
 
@@ -12,9 +13,14 @@ export const GlobalStyle =  createGlobalStyle`
 
     --shape: #ffffff;
     
+    --max-width: 1120px;
+
     @media (prefers-color-scheme: dark) {
       --background-color: #0d1117;
       --blue: #11141e;
+
+      --shape: #191e2e;
+      --text-title: #52629a;
     }
   }
 
