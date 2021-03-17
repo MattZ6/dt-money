@@ -10,6 +10,7 @@
   "repository": "https://github.com/mattz6/money-honey",
   "bugs": "https://github.com/mattz6/money-honey/issues",
   "dependencies": {
+    "miragejs": "^0.1.41",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.3",
