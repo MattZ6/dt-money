@@ -18,11 +18,12 @@ export const GlobalStyle =  createGlobalStyle`
     @media (prefers-color-scheme: dark) {
       --background-color: #0d1117;
       --blue: #11141e;
+      --blue-light: #6933ff;
 
       --shape: #191e2e;
       
       --text-title: #52629a;
-      --text-body: #3f455c;
+      --text-body: #535a76;
     }
   }
 
