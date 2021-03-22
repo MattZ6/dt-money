@@ -1,30 +1,12 @@
-import { useEffect, useState } from "react";
+import { useTransactions } from "../useTransactions";
 
-import { api } from "../../services/api";
+import moneyFormat from "../../utils/moneyFormat";
+import dateFormat from "../../utils/dateFormat";
 
 import { Container } from "./styles";
 
-interface ITransaction {
-  id: number;
-  title: string;
-  category: string;
-  type: 'deposit' | 'withdraw';
-  amount: number;
-  createdAt: string;
-}
-
 export function TransactionsTable() {
-  const [transactions, setTransactions] = useState<ITransaction[]>([]);
-
-  useEffect(() => {
-    async function getTransactions() {
-      const { data } = await api.get<{ transactions: ITransaction[] }>('/transactions');
-
-      setTransactions(data.transactions);
-    }
-
-    getTransactions();
-  }, []);
+  const { transactions } = useTransactions();
 
   return (
     <Container>
@@ -44,14 +26,11 @@ export function TransactionsTable() {
               <tr key={transaction.id}>    
                 <td>{transaction.title}</td>
                 <td className={transaction.type}>
-                  { new Intl.NumberFormat('pt-br', {
-                    style: 'currency',
-                    currency: 'BRL',
-                  }).format(transaction.amount) }
+                  { moneyFormat(transaction.amount) }
                 </td>
                 <td>{transaction.category}</td>
                 <td>
-                { new Intl.DateTimeFormat('pt-br').format(new Date(transaction.createdAt)) }  
+                { dateFormat(new Date(transaction.createdAt)) }  
                 </td>
               </tr>
             ))
