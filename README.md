@@ -13,7 +13,7 @@
 </div>
 
 <div align="center">
-  <img style="border-radius: 6px;" src=".github/images/home - dark.jpg" alt="🤑 Tela inicial da aplicação dt money - com tema claro 🌑, exibindo a lista das transações cadastradas" title="🤑 Tela inicial da aplicação dt money - com tema claro 🌑, exibindo a lista das transações cadastradas" />
+  <img style="border-radius: 6px;" src=".github/images/home - dark.jpg" alt="🤑 Tela inicial da aplicação dt money - com tema escuro 🌑, exibindo a lista das transações cadastradas" title="🤑 Tela inicial da aplicação dt money - com tema escuro 🌑, exibindo a lista das transações cadastradas" />
 
   > <small>dt money, tela inicial (com tema escuro)</small>
   <br/>
