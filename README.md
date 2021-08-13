@@ -17,6 +17,7 @@
 
   > <small>dt money, tela inicial (com tema escuro)</small>
   <br/>
+  
   > <small>O tema da aplicação muda baseado nas preferências do navegador do usuário.</small>
 </div>
 
